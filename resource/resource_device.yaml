@@ -1,0 +1,27 @@
+button_signin:  com.example.myapplication:id/login
+image_homepage: com.example.myapplication:id/imageView
+username: com.example.myapplication:id/username
+password: com.example.myapplication:id/password
+button_login: com.example.myapplication:id/signIn
+Verifikasi_Login: com.example.myapplication:id/textView
+sreach: com.example.myapplication:id/search_flight
+text_sreach:  com.example.myapplication:id/flight_number
+button_sreach:  com.example.myapplication:id/searchFlight
+verifikasi_sreach:  /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TableLayout
+
+book: com.example.myapplication:id/button5
+list_from_city: com.example.myapplication:id/spinnerFrom
+list_to_city: com.example.myapplication:id/spinnerTo
+list_class: com.example.myapplication:id/spinnerClass
+start_date: com.example.myapplication:id/textStartDate
+button_ok_start: android:id/button1
+end_date: com.example.myapplication:id/textEndDate
+button_ok_end: android:id/button1
+flight: com.example.myapplication:id/radioButtonFlight
+button_book: com.example.myapplication:id/book_flight
+price: com.example.myapplication:id/price1
+button_confirm_order: com.example.myapplication:id/confirm_order
+verifikasi_book1: com.example.myapplication:id/textFromCity
+verifikasi_book2: com.example.myapplication:id/imageView5
+verifikasi_book3: com.example.myapplication:id/textToCity
+verifikasi_book4: com.example.myapplication:id/checkedTextView

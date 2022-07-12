@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220712 23:58:44.778" rpa="false" schemaversion="3">
+<suite id="s1" name="Sreach" source="C:\vsandro\suites\sreach.robot">
+<test id="s1-t1" name="User Search Flight number DA935" line="6">
+<kw name="Open Flight Application" library="login">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=5000</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220712 23:58:45.396" endtime="20220712 23:59:01.411"/>
+</kw>
+<status status="PASS" starttime="20220712 23:58:45.395" endtime="20220712 23:59:01.411"/>
+</kw>
+<kw name="User Tap Sign in" library="login">
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${button_signin}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220712 23:59:01.413" endtime="20220712 23:59:01.949"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${button_signin}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220712 23:59:01.950" endtime="20220712 23:59:02.384"/>
+</kw>
+<status status="PASS" starttime="20220712 23:59:01.412" endtime="20220712 23:59:02.384"/>
+</kw>
+<kw name="User Input text username" library="login">
+<arg>input_username=support@ngendigital.com</arg>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>${username}</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220712 23:59:02.386" endtime="20220712 23:59:03.281"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${username}</arg>
+<arg>${input_username}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220712 23:59:03.288" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220712 23:59:03.282" endtime="20220712 23:59:03.404"/>
+</kw>
+<status status="PASS" starttime="20220712 23:59:02.385" endtime="20220712 23:59:03.405"/>
+</kw>
+<kw name="User Input text password" library="login">
+<arg>input_password=abc123</arg>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${password}</arg>
+<arg>${input_password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220712 23:59:03.413" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220712 23:59:03.406" endtime="20220712 23:59:04.081"/>
+</kw>
+<status status="PASS" starttime="20220712 23:59:03.405" endtime="20220712 23:59:04.082"/>
+</kw>
+<kw name="User Tap Button Sign in" library="login">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${button_login}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220712 23:59:04.083" endtime="20220712 23:59:04.986"/>
+</kw>
+<status status="PASS" starttime="20220712 23:59:04.082" endtime="20220712 23:59:04.986"/>
+</kw>
+<kw name="User Tap Search" library="sreach">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${sreach}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220712 23:59:07.159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220712 23:59:05.429" endtime="20220712 23:59:07.160"/>
+</kw>
+<msg timestamp="20220712 23:59:07.161" level="FAIL">ValueError: Element locator 'com.example.myapplication:id/search_flight' did not match any elements.</msg>
+<status status="FAIL" starttime="20220712 23:59:04.988" endtime="20220712 23:59:07.165"/>
+</kw>
+<status status="FAIL" starttime="20220712 23:59:04.987" endtime="20220712 23:59:07.167"/>
+</kw>
+<kw name="User input text search" library="sreach">
+<arg>id_flight_number=DA935</arg>
+<status status="NOT RUN" starttime="20220712 23:59:07.170" endtime="20220712 23:59:07.170"/>
+</kw>
+<kw name="User Tap button search" library="sreach">
+<status status="NOT RUN" starttime="20220712 23:59:07.171" endtime="20220712 23:59:07.171"/>
+</kw>
+<kw name="Verify user after Tap button search" library="sreach">
+<status status="NOT RUN" starttime="20220712 23:59:07.171" endtime="20220712 23:59:07.171"/>
+</kw>
+<status status="FAIL" starttime="20220712 23:58:45.393" endtime="20220712 23:59:07.173">ValueError: Element locator 'com.example.myapplication:id/search_flight' did not match any elements.</status>
+</test>
+<status status="FAIL" starttime="20220712 23:58:44.784" endtime="20220712 23:59:07.176"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sreach">Sreach</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

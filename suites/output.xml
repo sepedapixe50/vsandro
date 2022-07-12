@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220706 21:33:17.122" rpa="false" schemaversion="3">
+<suite id="s1" name="Step" source="C:\vsandro\steps\step.robot">
+<test id="s1-t1" name="User Should Be Able To See Homepage" line="26">
+<kw name="Open Flight Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=5000</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220706 21:33:17.371" endtime="20220706 21:33:30.069"/>
+</kw>
+<status status="PASS" starttime="20220706 21:33:17.370" endtime="20220706 21:33:30.069"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>com.example.myapplication:id/login</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220706 21:33:30.070" endtime="20220706 21:33:30.552"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>com.example.myapplication:id/imageView</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220706 21:33:30.553" endtime="20220706 21:33:30.700"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>com.example.myapplication:id/login</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220706 21:33:30.700" endtime="20220706 21:33:31.158"/>
+</kw>
+<status status="PASS" starttime="20220706 21:33:17.370" endtime="20220706 21:33:31.158"/>
+</test>
+<status status="PASS" starttime="20220706 21:33:17.124" endtime="20220706 21:33:31.160"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Step">Step</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
